@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Caution Tape X</title>
+<style>
+html,body{
+  margin:0;
+  height:100%;
+  background:#000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+.tape{
+  position:absolute;
+  width:400px;
+  height:35px;
+  background:linear-gradient(90deg,#ffeb3b 0%,#f4d100 100%);
+  border:3px solid #000;
+  color:#000;
+  font-weight:bold;
+  font-family:sans-serif;
+  text-align:center;
+  line-height:35px;
+  letter-spacing:3px;
+  box-shadow:0 0 12px rgba(255,215,0,0.6),
+             0 0 25px rgba(255,170,0,0.4) inset;
+  transform-origin:center center;
+}
+
+.tape.one{
+  transform:rotate(20deg);
+}
+.tape.two{
+  transform:rotate(-20deg);
+}
+</style>
+</head>
+<body>
+  <div class="tape one">CAUTION</div>
+  <div class="tape two">CAUTION</div>
+</body>
+</html>
