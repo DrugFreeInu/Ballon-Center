@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>DFBC · Neon 5th Floor Sign</title>
+<style>
+html,body{
+  margin:0;
+  height:100%;
+  background:#000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+
+.neon-sign{
+  font-family:'Courier New', monospace;
+  font-size:40px;
+  letter-spacing:2px;
+  color:#f5e642;
+  text-shadow:
+    0 0 10px #f5e642,
+    0 0 20px #f5e642,
+    0 0 40px #f5e642,
+    0 0 60px #f5e642,
+    0 0 80px #f5e642;
+  animation: flicker 2.5s infinite alternate;
+}
+
+@keyframes flicker{
+  0%,18%,22%,25%,53%,57%,100% {opacity:1;}
+  20%,24%,55% {opacity:.4;}
+}
+</style>
+</head>
+<body>
+  <div class="neon-sign">5th Floor: DFBC</div>
+</body>
+</html>
